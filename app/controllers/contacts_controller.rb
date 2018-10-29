@@ -6,7 +6,9 @@ class ContactsController < ApplicationController
   
   def create
     @contact = Contact.new(params_contact)
-    @contact.save
+    if @contact.save
+      @contact.send_email
+    end  
   end
   
     private
