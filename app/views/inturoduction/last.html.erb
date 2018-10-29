@@ -1,0 +1,7 @@
+<% provide(:title, "最後に") %>
+<div class="center">
+  <h1>ありがとうございました。</h1>
+  <p>ご連絡の際は、下記のウィンドウからご連絡ください。</p>
+  <%= link_to "コンタクト", new_contact_path, remote: true, class: "btn btn-default btn-primary" %>
+  <div id="mail-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+</div>

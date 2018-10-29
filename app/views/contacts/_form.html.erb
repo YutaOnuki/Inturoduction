@@ -1,0 +1,37 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">興味を持っていただきありがとうございます!!<br>ここから小貫祐汰にメールを送れます!!</h5>
+    </div>
+    <div class="modal-body">
+      <div class="form-group field">
+        <%= form_for(@contact, remote: true) do |f| %>
+        
+          <%= f.label :content %>
+          <%= f.text_field :content, class: "form-control" %>
+        
+          <%= f.label :c_name %>
+          <%= f.text_field :c_name, class: "form-control" %>
+        
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control" %>
+        
+          <%= f.label :phone %>
+          <%= f.text_field :phone, class: "form-control" %>
+        
+          <%= f.label :email %>
+          <%= f.text_field :email, class: "form-control" %>
+      
+          <%= f.label :another_one %>
+          <%= f.text_field :another_one, class: "form-control" %>
+        
+          <%= f.label :another_two %>
+          <%= f.text_field :another_two, class: "form-control" %>
+            
+          <%= f.submit "送信", class: "btn btn-primary btn-form" %>
+        <% end %>
+        <button type="button" class="btn btn-secondary btn-form btn-close" data-dismiss="modal">閉じる</button>  
+      </div>  
+    </div>
+  </div>
+</div>

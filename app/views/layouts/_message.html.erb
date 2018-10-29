@@ -1,0 +1,16 @@
+<% if @contact.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      <h2>送信できませんでした</h2>
+      <ul>  
+        <% @contact.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% else %>
+  <div class="alert alert-success">
+    <h2>ありがとうございます!<br>メールを送信しました!</h2>
+  </div>  
+<% end %>
