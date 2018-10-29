@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params_contact)
     if @contact.save
       @contact.send_email
-    end  
+    end
   end
   
     private
