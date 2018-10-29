@@ -1,6 +1,47 @@
-<% provide(:title, "好きなこと") %>
+<% provide(:title, "詳細情報") %>
 <div class="center">
-  <h1>プライベートについて</h1>
-  <p>趣味は、NBA、野球観戦、特撮作品の鑑賞、ライブに行くことです。</p>
-  <%= link_to "最後に", last_path %>
+  
+  <table class="table table-borded table-striped">
+    <thead>
+      <h1>個人プロフィール</h1>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="1">名前</td>
+        <td colspan="2">小貫 祐汰</td>
+      </tr>
+      <tr>
+        <td>生年月日</td>
+        <td colspan="2">1993/3/26</td>
+      </tr>
+      <tr>
+        <td>年齢</td>
+        <td colspan="2">25才</td>
+      </tr>
+      <tr>
+        <td>趣味</td>
+        <td colspan="2">NBA観戦、野球観戦</td>
+      </tr>
+      <tr>
+        <td>好きなチーム/選手(NBA)</td>
+        <td>ヒューストン・ロケッツ</td>
+        <td>ジェームス・ハーデン</td>
+      </tr>
+      <tr>
+        <td>好きなチーム(NPB)</td>
+        <td colspan="2">ヤクルトスワローズ</td>
+      </tr>
+      <tr>
+        <td rowspan=3>好きなアーティスト</td>
+        <td colspan="2">ポルノグラフィティ</td>
+      </tr>
+      <tr>
+        <td colspan="2">ポルカドットスティングレイ</td>
+      </tr>
+      <tr>
+        <td colspan="2">BONJOVI</td>
+      </tr>
+    </tbody>
+  </table>
+  <%= link_to "NEXT:最後に", last_path %>
 </div>
